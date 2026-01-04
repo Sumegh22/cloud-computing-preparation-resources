@@ -191,3 +191,28 @@ Deploy the visualization tool on-premises. Query the data warehouse directly ove
 * How Amazon Macie works:  via - https://aws.amazon.com/macie/
 * https://aws.amazon.com/macie/
 
+# NAT Gateway 
+* NAT instance can be used as a bastion server
+* Security Groups can be associated with a NAT instance
+* NAT instance supports port forwarding
+
+A NAT instance or a NAT Gateway can be used in a public subnet in your VPC to enable instances in the private subnet to initiate outbound IPv4 traffic to the Internet.
+
+How NAT Gateway works:  via - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-gateway.html
+
+How NAT Instance works:  via - https://docs.aws.amazon.com/vpc/latest/userguide/VPC_NAT_Instance.html
+
+Please see this high-level summary of the differences between NAT instances and NAT gateways relevant to the options described in the question:
+
+via - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html
+
+Security Groups can be associated with a NAT gateway
+
+* NAT gateway can be used as a bastion server
+
+These three options contradict the details provided in the explanation above, so these options are incorrect.
+
+Reference:
+
+https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html
+
