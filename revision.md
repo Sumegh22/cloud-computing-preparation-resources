@@ -14,7 +14,6 @@
 * You can use AWS DataSync to migrate data located on-premises, at the edge, or in other clouds to Amazon S3, Amazon EFS, Amazon FSx for Windows File Server, Amazon FSx for Lustre, Amazon FSx for OpenZFS, and Amazon FSx for NetApp ONTAP.
 
 * AWS DataSync:  
-<img width="2360" height="1394" alt="image" src="https://github.com/user-attachments/assets/4959ddda-58c4-441f-8f37-265fc45f759d" />
 
 via - https://aws.amazon.com/datasync/
 
@@ -36,8 +35,6 @@ via - https://aws.amazon.com/datasync/
 * Amazon Aurora is a MySQL and PostgreSQL-compatible relational database built for the cloud, that combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases. Amazon Aurora features a distributed, fault-tolerant, self-healing storage system that auto-scales up to 64TB per database instance. Aurora is not an in-memory database.
 
 * Amazon Aurora Global Database is designed for globally distributed applications, allowing a single Amazon Aurora database to span multiple AWS regions. It replicates your data with no impact on database performance, enables fast local reads with low latency in each region, and provides disaster recovery from region-wide outages. Amazon Aurora Global Database is the correct choice for the given use-case.
-
-<img width="2417" height="691" alt="image" src="https://github.com/user-attachments/assets/cd1ec067-09ce-46ac-b1c3-4ef2f12ba70f" />
 
 
 * Amazon Aurora Global Database Features:  via - https://aws.amazon.com/rds/aurora/global-database/
