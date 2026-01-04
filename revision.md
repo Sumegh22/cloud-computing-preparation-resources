@@ -169,4 +169,17 @@ Deploy the visualization tool on-premises. Query the data warehouse directly ove
 * https://aws.amazon.com/directconnect/faqs/
 
 
+# Amazon GuardDuty 
+* Use Amazon GuardDuty to monitor any malicious activity on data stored in Amazon S3. Use Amazon Macie to identify any sensitive data stored on Amazon S3
+
+* Amazon GuardDuty offers threat detection that enables you to continuously monitor and protect your AWS accounts, workloads, and data stored in Amazon S3. GuardDuty analyzes continuous streams of meta-data generated from your account and network activity found in AWS CloudTrail Events, Amazon VPC Flow Logs, and DNS Logs. It also uses integrated threat intelligence such as known malicious IP addresses, anomaly detection, and machine learning to identify threats more accurately.
+* References: https://aws.amazon.com/guardduty/
+
+# Macie 
+* How Amazon GuardDuty works:  via - https://aws.amazon.com/guardduty/
+
+* Amazon Macie is a fully managed data security and data privacy service that uses machine learning and pattern matching to discover and protect your sensitive data on Amazon S3. Macie automatically detects a large and growing list of sensitive data types, including personally identifiable information (PII) such as names, addresses, and credit card numbers. It also gives you constant visibility of the data security and data privacy of your data stored in Amazon S3.
+
+* How Amazon Macie works:  via - https://aws.amazon.com/macie/
+* https://aws.amazon.com/macie/
 
