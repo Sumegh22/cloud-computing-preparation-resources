@@ -12,6 +12,13 @@
 Types of access control in Amazon S3
 <img width="1372" height="960" alt="image" src="https://github.com/user-attachments/assets/c7e48854-ab46-4bae-8267-cfa528ba2e06" />
 
+* When A process replaces an existing object and immediately tries to read it. Amazon S3 always returns the latest version of the object
+* Amazon S3 delivers strong read-after-write consistency automatically, without changes to performance or availability, without sacrificing regional isolation for applications, and at no additional cost.
+* After a successful write of a new object or an overwrite of an existing object, any subsequent read request immediately receives the latest version of the object. Amazon S3 also provides strong consistency for list operations, so after a write, you can immediately perform a listing of the objects in a bucket with any changes reflected.
+* Strong read-after-write consistency helps when you need to immediately read an object after a write. For example, strong read-after-write consistency when you often read and list immediately after writing objects.
+* To summarize, all Amazon S3 GET, PUT, and LIST operations, as well as operations that change object tags, ACLs, or metadata, are strongly consistent. What you write is what you will read, and the results of a LIST will be an accurate reflection of what’s in the bucket.
+
+
 
 # Aws Kinesis 
 * Use aws kinesis data streams to process stream data in near real time.
