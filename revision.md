@@ -58,6 +58,8 @@ via - https://aws.amazon.com/datasync/
 ```
 
 # Ec2 application behind and ASG
+<img width="1656" height="1156" alt="image" src="https://github.com/user-attachments/assets/b58b3956-5543-4f77-984f-04ce4ed85de5" />
+
 * To make it more resilient and reduce load on app
 
 You can use Amazon Aurora replicas and Amazon CloudFront distribution to make the application more resilient to spikes in request rates.
@@ -132,6 +134,8 @@ AWS Lambda can be combined with DynamoDB to process and capture the key-value da
 * Amazon DynamoDB is a key-value and document database that delivers single-digit millisecond performance at any scale.
 * It's a fully managed, multi-region, multi-master, durable database with built-in security, backup and restore, and in-memory caching for internet-scale applications.
 * Amazon DynamoDB is a NoSQL database and it's best suited to store data in key-value pairs.
+* Amazon DynamoDB Accelerator (DAX) is a fully managed, highly available, in-memory cache for Amazon DynamoDB that delivers up to a 10 times performance improvement—from       milliseconds to microseconds—even at millions of requests per second.
+* Amazon DynamoDB Accelerator (DAX) is tightly integrated with Amazon DynamoDB—you simply provision a DAX cluster, use the DAX client SDK to point your existing Amazon DynamoDB API calls at the DAX cluster, and let DAX handle the rest. Because DAX is API-compatible with Amazon DynamoDB, you don't have to make any functional application code changes. DAX is used to natively cache Amazon DynamoDB reads.
 
 
 # Amazon Redshift - 
@@ -206,13 +210,5 @@ Please see this high-level summary of the differences between NAT instances and 
 
 via - https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html
 
-Security Groups can be associated with a NAT gateway
-
-* NAT gateway can be used as a bastion server
-
-These three options contradict the details provided in the explanation above, so these options are incorrect.
-
-Reference:
-
-https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html
+* Reference: https://docs.aws.amazon.com/vpc/latest/userguide/vpc-nat-comparison.html
 
