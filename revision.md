@@ -2,8 +2,16 @@
 * Cognito User Pools Authorises api calls within api gateway.
 *  Cognito identity pools provide aws credentials to users to access aws resources.
   
-# S3 Bucket data
+# S3
 * To setup a one time copy of S3 bucket data from one region to another region You can use Aws snowball, Use S3 Sync command, or Setup S3 batch replication to copy objects across S3 buckets in another Region using S3 console and delete replication configuration.
+
+* Bucket policies in Amazon S3 can be used to add or deny permissions across some or all of the objects within a single bucket. Policies can be attached to users, groups, or Amazon S3 buckets, enabling centralized management of permissions. With bucket policies, you can grant users within your AWS Account or other AWS Accounts access to your Amazon S3 resources.
+
+* You can further restrict access to specific resources based on certain conditions. For example, you can restrict access based on request time (Date Condition), whether the request was sent using SSL (Boolean Conditions), a requester’s IP address (IP Address Condition), or based on the requester's client application (String Conditions). To identify these conditions, you use policy keys.
+
+Types of access control in Amazon S3
+<img width="1372" height="960" alt="image" src="https://github.com/user-attachments/assets/c7e48854-ab46-4bae-8267-cfa528ba2e06" />
+
 
 # Aws Kinesis 
 * Use aws kinesis data streams to process stream data in near real time.
