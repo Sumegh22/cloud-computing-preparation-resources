@@ -22,6 +22,19 @@ Types of access control in Amazon S3
 
 # Aws Kinesis 
 * Use aws kinesis data streams to process stream data in near real time.
+**Enhanced Fanout feature of Amazon Kinesis Data Streams:**
+* Amazon Kinesis Data Streams (KDS) is a massively scalable and durable real-time data streaming service. KDS can continuously capture gigabytes of data per second from hundreds of thousands of sources such as website clickstreams, database event streams, financial transactions, social media feeds, IT logs, and location-tracking events.
+
+* By default, the 2MB/second/shard output is shared between all of the applications consuming data from the stream. You should use enhanced fan-out if you have multiple consumers retrieving data from a stream in parallel. With enhanced fan-out developers can register stream consumers to use enhanced fan-out and receive their own 2MB/second pipe of read throughput per shard, and this throughput automatically scales with the number of shards in a stream.
+
+Amazon Kinesis Data Streams Fanout:
+<img width="1586" height="1106" alt="image" src="https://github.com/user-attachments/assets/dc520287-3ed4-4016-8e2a-b83bde109f5c" />
+
+
+<img width="1506" height="1270" alt="image" src="https://github.com/user-attachments/assets/c1253a54-a222-4957-8fae-4a3eaf9edc69" />
+
+--------------------
+
 
 # AWS Rds and Databases 
 1. Use read replica to significantly reduce load on db.
@@ -51,6 +64,15 @@ via - https://aws.amazon.com/datasync/
 
 * Using task scheduling in AWS DataSync, you can periodically execute a transfer task from your source storage system to the destination. You can use the DataSync scheduled task to send the video files to the Amazon EFS file system every 24 hours.
 ```
+
+# VPC 
+
+VPC sharing (part of Resource Access Manager) allows multiple AWS accounts to create their application resources such as Amazon EC2 instances, Amazon RDS databases, Amazon Redshift clusters, and AWS Lambda functions, into shared and centrally-managed Amazon Virtual Private Clouds (VPCs). To set this up, the account that owns the VPC (owner) shares one or more subnets with other accounts (participants) that belong to the same organization from AWS Organizations. After a subnet is shared, the participants can view, create, modify, and delete their application resources in the subnets shared with them. Participants cannot view, modify, or delete resources that belong to other participants or the VPC owner.
+
+You can share Amazon VPCs to leverage the implicit routing within a VPC for applications that require a high degree of interconnectivity and are within the same trust boundaries. This reduces the number of VPCs that you create and manage while using separate accounts for billing and access control.
+
+-----------
+
 
 # Rds for Postgres and Mysql (Latency even with Read replicas)
 ```
