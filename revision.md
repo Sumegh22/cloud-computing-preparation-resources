@@ -801,7 +801,7 @@ Typical use cases:
 * [Cloud Engineer Skilss DA Guide ](https://cloudengineerskills.com/posts/aws-developer-associate/)
 * [Amazon GuardDuty Docs](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html)
 * [Amazon GuardDuty Docs Setting](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html)
-* [AWS security Hub (https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html)
+* [AWS security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html)
 * [tutorials dojo](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c03/)
 * [AWS dynamodb dax dev guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.html)
 * [DAX access control guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.access-control.html)
