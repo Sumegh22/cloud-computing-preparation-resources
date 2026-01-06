@@ -792,34 +792,26 @@ Typical use cases:
 - Consolidation of OLTP exports from multiple systems into a single analytical store.
 
 ***
+--------------
+# References
 
-## How to expand this into a full book
-
-To turn this into a complete exam book that “covers all services” in scope for SAA‑C03 and DVA‑C02:
-
-- Use the “Mentions of AWS services on the exam” sections in the official exam guides to build your full service list per domain.[2][1]
-- For each service, create a chapter or sub‑chapter using the structure shown above (definition, USPs, when to use, use cases, exam traps).  
-- Incorporate key AWS whitepapers and frameworks such as the AWS Well‑Architected Framework, Security Best Practices, and Storage and Database whitepapers as reading references for each domain.[3][8]
-
-This approach gives readers a self‑contained conceptual map while pushing them to the official AWS docs and research resources for the latest details and diagrams.
-
-[1](https://docs.aws.amazon.com/aws-certification/latest/examguides/solutions-architect-associate-03.html)
-[2](https://docs.aws.amazon.com/aws-certification/latest/examguides/developer-associate-02.html)
-[3](https://kodekloud.com/blog/aws-solution-architect-guide/)
-[4](https://cloudengineerskills.com/posts/aws-developer-associate/)
-[5](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html)
-[6](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html)
-[7](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html)
-[8](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c03/)
-[9](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.html)
-[10](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.access-control.html)
-[11](https://docs.aws.amazon.com/pdfs/aws-certification/latest/examguides/aws-certification-exam-guides.pdf)
-[12](https://digitalcloud.training/category/aws-cheat-sheets/aws-solutions-architect-associate/)
-[13](https://www.pluralsight.com/resources/blog/cloud/aws-solutions-architect-associate-exam-blueprint-6-areas-to-master)
-[14](https://www.whizlabs.com/blog/aws-services-aws-developer-associate-exam/)
-[15](https://www.reddit.com/r/AWSCertifications/comments/qznczk/important_topics_for_aws_solutions_architect/)
-[16](https://dev.to/dietertroy/aws-certified-solutions-architect-associate-study-guide-38c2)
-[17](https://digitalcloud.training/category/aws-cheat-sheets/aws-developer-associate/)
-[18](https://www.reddit.com/r/AWSCertifications/comments/175zyam/this_is_for_aws_solution_architect_associate_exam/)
-[19](https://www.reddit.com/r/AWSCertifications/comments/16s7x4i/aws_developer_associate_dvac02_exam_topics_and/)
-[20](https://www.slideshare.net/slideshow/aws-certified-solutions-architect-associate-exam-guide-pdf/265038165)
+* [Solution architect exam guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/solutions-architect-associate-03.html)
+* [Developer Associate Exam Guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/developer-associate-02.html)
+* [KodeKloud SA guide ](https://kodekloud.com/blog/aws-solution-architect-guide/)
+* [Cloud Engineer Skilss DA Guide ](https://cloudengineerskills.com/posts/aws-developer-associate/)
+* [Amazon GuardDuty Docs](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html)
+* [Amazon GuardDuty Docs Setting](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html)
+* [AWS security Hub (https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html)
+* [tutorials dojo](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c03/)
+* [AWS dynamodb dax dev guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.html)
+* [DAX access control guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.access-control.html)
+* [AWS exam guide](https://docs.aws.amazon.com/pdfs/aws-certification/latest/examguides/aws-certification-exam-guides.pdf)
+* [SAA cheat sheet](https://digitalcloud.training/category/aws-cheat-sheets/aws-solutions-architect-associate/)
+* [SAA blue print](https://www.pluralsight.com/resources/blog/cloud/aws-solutions-architect-associate-exam-blueprint-6-areas-to-master)
+[WhizLabs blog](https://www.whizlabs.com/blog/aws-services-aws-developer-associate-exam/)
+* [AWS imp Topics for SAA reddit](https://www.reddit.com/r/AWSCertifications/comments/qznczk/important_topics_for_aws_solutions_architect/)
+* [AWS SAA study guide](https://dev.to/dietertroy/aws-certified-solutions-architect-associate-study-guide-38c2)
+* [DVCA cheat sheet](https://digitalcloud.training/category/aws-cheat-sheets/aws-developer-associate/)
+* [Reddit Link for AWS SAA](https://www.reddit.com/r/AWSCertifications/comments/175zyam/this_is_for_aws_solution_architect_associate_exam/)
+* [Redit Link for DVCA topics](https://www.reddit.com/r/AWSCertifications/comments/16s7x4i/aws_developer_associate_dvac02_exam_topics_and/)
+* [AWS SA Exam guide](https://www.slideshare.net/slideshow/aws-certified-solutions-architect-associate-exam-guide-pdf/265038165)
