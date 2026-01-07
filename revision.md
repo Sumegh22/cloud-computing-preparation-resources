@@ -794,6 +794,15 @@ Typical use cases:
 ***
 --------------
 # References
+* AWS Well-Architected Framework([opens in a new tab](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html))
+* AWS Security Best Practices(opens in a new tab)
+* Amazon EC2(opens in a new tab)
+* Amazon S3(opens in a new tab)
+* Amazon VPC(opens in a new tab)
+* Amazon Route 53(opens in a new tab)
+* Amazon RDS(opens in a new tab)
+* Amazon SQS
+
 
 * [Solution architect exam guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/solutions-architect-associate-03.html)
 * [Developer Associate Exam Guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/developer-associate-02.html)
