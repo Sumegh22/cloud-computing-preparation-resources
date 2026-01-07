@@ -794,27 +794,31 @@ Typical use cases:
 ***
 --------------
 # References
-* AWS Well-Architected Framework([opens in a new tab](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html))
-* AWS Security Best Practices(opens in a new tab)
-* Amazon EC2(opens in a new tab)
-* Amazon S3(opens in a new tab)
-* Amazon VPC(opens in a new tab)
-* Amazon Route 53(opens in a new tab)
-* Amazon RDS(opens in a new tab)
-* Amazon SQS
 
-
-* [Solution architect exam guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/solutions-architect-associate-03.html)
-* [Developer Associate Exam Guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/developer-associate-02.html)
-* [KodeKloud SA guide ](https://kodekloud.com/blog/aws-solution-architect-guide/)
-* [Cloud Engineer Skilss DA Guide ](https://cloudengineerskills.com/posts/aws-developer-associate/)
+## Must Read white papers
+* [AWS Well-Architected Framework](https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html)
+* [AWS Security Best Practices](https://docs.aws.amazon.com/whitepapers/latest/introduction-aws-security/security-of-the-aws-infrastructure.html)
+* [Amazon EC2](https://aws.amazon.com/ec2/faqs/?saa=sec&sec=prep)
+* [Amazon S3](https://aws.amazon.com/s3/faqs/?saa=sec&sec=prep)
+* [Amazon VPC](https://aws.amazon.com/vpc/faqs/?saa=sec&sec=prep)
+* [Amazon Route 53](https://aws.amazon.com/route53/faqs/?saa=sec&sec=prep)
+* [Amazon RDS](https://aws.amazon.com/rds/faqs/?saa=sec&sec=prep)
+* [Amazon SQS](https://aws.amazon.com/sqs/faqs/?da=sec&sec=prep)
+* [AWS security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html)
 * [Amazon GuardDuty Docs](https://docs.aws.amazon.com/config/latest/developerguide/guardduty-enabled-centralized.html)
 * [Amazon GuardDuty Docs Setting](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_settingup.html)
-* [AWS security Hub](https://docs.aws.amazon.com/securityhub/latest/userguide/fsbp-standard.html)
-* [tutorials dojo](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c03/)
 * [AWS dynamodb dax dev guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.html)
 * [DAX access control guide](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.access-control.html)
 * [AWS exam guide](https://docs.aws.amazon.com/pdfs/aws-certification/latest/examguides/aws-certification-exam-guides.pdf)
+* [Solution architect exam guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/solutions-architect-associate-03.html)
+* [Developer Associate Exam Guide ](https://docs.aws.amazon.com/aws-certification/latest/examguides/developer-associate-02.html)
+
+
+## Additional info to check
+
+* [KodeKloud SA guide ](https://kodekloud.com/blog/aws-solution-architect-guide/)
+* [Cloud Engineer Skilss DA Guide ](https://cloudengineerskills.com/posts/aws-developer-associate/)
+* [tutorials dojo](https://tutorialsdojo.com/aws-certified-solutions-architect-associate-saa-c03/)
 * [SAA cheat sheet](https://digitalcloud.training/category/aws-cheat-sheets/aws-solutions-architect-associate/)
 * [SAA blue print](https://www.pluralsight.com/resources/blog/cloud/aws-solutions-architect-associate-exam-blueprint-6-areas-to-master)
 [WhizLabs blog](https://www.whizlabs.com/blog/aws-services-aws-developer-associate-exam/)
