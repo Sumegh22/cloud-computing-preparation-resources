@@ -514,8 +514,8 @@ Adding __lifecycle hooks__ to ASGs put instances in __wait state__ before termin
 
 ASG __Dynamic Scaling Policies__ —
 - Target tracking scaling. The __preferred__ one to use, this should be the first one we should consider.
-- Step scaling
-- Simple scaling
+- Step scaling/ Simple scaling
+- Scheduled scaling
 
 If you are scaling based on a utilization metric that increases or decreases proportionally to the number of instances in an Auto Scaling group, we recommend that you use target tracking scaling policies. Otherwise, we recommend that you use step scaling policies.
 
