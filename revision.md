@@ -1,3 +1,86 @@
+
+# IAM 
+* Global Service -> We create user and assign them to groups
+* 1 user represents 1 person
+* Groups can only contain users (NOT GROUPS)
+* users can belong to mutiple groups
+* We follow Least privilege principle
+* tags can be used to add metadata to your resources.
+* A user in a group inherits all permissions assigned to the group
+
+## IAM Policies
+* Json document that gives rights to the users to access AWS resources
+* Version, Id, Statement, 
+* Statment => ( SID, Effect, Principal, Action, Resource, Condition )
+* MFA : recomended => ( Password + a physical device authentication) => Virtual device ( Google Authenticator, Authy, U2f Yubikey, KeyFOb, AWS GovCloud KeyFob)
+
+## IAM Roles 
+* Roles are permissions that are intended to be used by services
+* ex : Ec2InstanceRoles, LambdaRoles
+* Sercurity Tools
+  * IAM CredentialsReport(account-level) : creates a csv report
+  * IAM Last Access (formerly: Access Advisor)  (user-level) -> You can revise the rights/ permissions using this report
+ 
+## IAM Best pratices
+* Don't use root user
+* 1 Physical User.. 1 AWS user
+* strong pwd policy
+* Use MFA
+* Create roles for aws services
+* Use access Keys for programmatic access ( using CLI/ SDK to interract with AWS)
+* Use Reports for audit purpose
+
+
+---------------------------------------
+
+# EC2 Instances 
+
+## Basics 
+1. Elastic Compute Cloud - Infra as a svc
+2. OS ( Linux, Windows, MacOs)
+3. Storage ( EBS, EFS) / Hardware ( Ec2 instance store)
+4. bootstrap script runs only once at the first start and it runs with a root user (sudo)
+
+## Instance Types: 
+1. 
+
+
+
+# Ec2 application behind and ASG
+
+## Amazon EC2 dedicated instances 
+- Dedicated instances are Amazon EC2 instances that run in a VPC on hardware that's dedicated to a single customer. Your dedicated instances are physically isolated at the host hardware level from instances that belong to other AWS accounts. Dedicated instances may share hardware with other instances from the same AWS account that are not dedicated instances. Dedicated instances cannot be used for existing server-bound software licenses.
+
+## Amazon EC2 on-demand instances
+
+## Amazon EC2 reserved instances (RI)
+Amazon EC2 presents a virtual computing environment, allowing you to use web service interfaces to launch instances with a variety of operating systems, load them with your custom application environment, manage your network’s access permissions, and run your image using as many or few systems as you desire.
+
+## Amazon EC2 provides the following purchasing options to enable you to optimize your costs based on your needs:
+
+* On-Demand Instances – Pay, by the second, for the instances that you launch.
+
+* Reserved Instances (RI) – Reduce your Amazon EC2 costs by making a commitment to a consistent instance configuration, including instance type and Region, for a term of 1 or 3 years.
+
+* Neither on-demand instances nor reserved instances can be used for existing server-bound software licenses.
+
+### Amazon EC2 dedicated hosts
+
+* You can use Dedicated Hosts to launch Amazon EC2 instances on physical servers that are dedicated for your use. Dedicated Hosts give you additional visibility and control over how instances are placed on a physical server, and you can reliably use the same physical server over time. As a result, Dedicated Hosts enable you to use your existing server-bound software licenses like Windows Server and address corporate compliance and regulatory requirements
+
+<img width="1656" height="1156" alt="image" src="https://github.com/user-attachments/assets/b58b3956-5543-4f77-984f-04ce4ed85de5" />
+
+* To make it more resilient and reduce load on app
+
+* You can only use a launch template to provision capacity across multiple instance types using both On-Demand Instances and Spot Instances to achieve the desired scale, performance, and cost
+
+* A launch template is similar to a launch configuration, in that it specifies instance configuration information such as the ID of the Amazon Machine Image (AMI), the instance type, a key pair, security groups, and the other parameters that you use to launch EC2 instances. Also, defining a launch template instead of a launch configuration allows you to have multiple versions of a template.
+
+* With launch templates, you can provision capacity across multiple instance types using both On-Demand Instances and Spot Instances to achieve the desired scale, performance, and cost. Hence this is the correct option.
+
+* You can use Amazon Aurora replicas and Amazon CloudFront distribution to make the application more resilient to spikes in request rates.
+
+
 # AWS Cognito
 * Cognito User Pools Authorises api calls within api gateway.
 *  Cognito identity pools provide aws credentials to users to access aws resources.
@@ -85,39 +168,7 @@ You can share Amazon VPCs to leverage the implicit routing within a VPC for appl
 * Amazon Aurora Global Database Features:  via - https://aws.amazon.com/rds/aurora/global-database/
 
 
-# Ec2 application behind and ASG
 
-## Amazon EC2 dedicated instances 
-- Dedicated instances are Amazon EC2 instances that run in a VPC on hardware that's dedicated to a single customer. Your dedicated instances are physically isolated at the host hardware level from instances that belong to other AWS accounts. Dedicated instances may share hardware with other instances from the same AWS account that are not dedicated instances. Dedicated instances cannot be used for existing server-bound software licenses.
-
-## Amazon EC2 on-demand instances
-
-## Amazon EC2 reserved instances (RI)
-Amazon EC2 presents a virtual computing environment, allowing you to use web service interfaces to launch instances with a variety of operating systems, load them with your custom application environment, manage your network’s access permissions, and run your image using as many or few systems as you desire.
-
-## Amazon EC2 provides the following purchasing options to enable you to optimize your costs based on your needs:
-
-* On-Demand Instances – Pay, by the second, for the instances that you launch.
-
-* Reserved Instances (RI) – Reduce your Amazon EC2 costs by making a commitment to a consistent instance configuration, including instance type and Region, for a term of 1 or 3 years.
-
-* Neither on-demand instances nor reserved instances can be used for existing server-bound software licenses.
-
-### Amazon EC2 dedicated hosts
-
-* You can use Dedicated Hosts to launch Amazon EC2 instances on physical servers that are dedicated for your use. Dedicated Hosts give you additional visibility and control over how instances are placed on a physical server, and you can reliably use the same physical server over time. As a result, Dedicated Hosts enable you to use your existing server-bound software licenses like Windows Server and address corporate compliance and regulatory requirements
-
-<img width="1656" height="1156" alt="image" src="https://github.com/user-attachments/assets/b58b3956-5543-4f77-984f-04ce4ed85de5" />
-
-* To make it more resilient and reduce load on app
-
-* You can only use a launch template to provision capacity across multiple instance types using both On-Demand Instances and Spot Instances to achieve the desired scale, performance, and cost
-
-* A launch template is similar to a launch configuration, in that it specifies instance configuration information such as the ID of the Amazon Machine Image (AMI), the instance type, a key pair, security groups, and the other parameters that you use to launch EC2 instances. Also, defining a launch template instead of a launch configuration allows you to have multiple versions of a template.
-
-* With launch templates, you can provision capacity across multiple instance types using both On-Demand Instances and Spot Instances to achieve the desired scale, performance, and cost. Hence this is the correct option.
-
-* You can use Amazon Aurora replicas and Amazon CloudFront distribution to make the application more resilient to spikes in request rates.
 
 Use Amazon Aurora Replica
 
